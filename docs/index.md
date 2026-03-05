@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# AI Content Hub
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Dieses Projekt sammelt automatisch:
 
-## Commands
+- aktuelle AI News
+- Content Ideen
+- Analysen zu AI Trends
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Neueste Updates
 
-## Project layout
+- Daily News
+- Content Ideas
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Alle Inhalte werden automatisch generiert.
