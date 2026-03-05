@@ -38,3 +38,10 @@ jobs:
 
             Create a branch content/daily-YYYY-MM-DD, commit, and open a PR:
             Title: "AI Content Update: YYYY-MM-DD"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: content/daily-${{ github.run_id }}
+          title: "AI Content Update"
+          commit-message: "Daily update"
+          body: "Automated daily content update by Claude"
