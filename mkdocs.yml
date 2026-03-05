@@ -1,1 +1,18 @@
-site_name: My Docs
+site_name: AI Content Hub
+site_description: AI News and Content Ideas
+site_url: https://USERNAME.github.io/ai-content-hub
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - News:
+      - news/
+  - Content Ideas:
+      - ideas/
+
+markdown_extensions:
+  - toc
+  - tables
+  - admonition
