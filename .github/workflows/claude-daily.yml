@@ -1,4 +1,4 @@
-name: Claude Daily News
+name: Claude - Daily Update
 
 on:
   schedule:
@@ -6,43 +6,34 @@ on:
   workflow_dispatch:
 
 permissions:
+  id-token: write
   contents: write
   pull-requests: write
 
 jobs:
-  daily_update:
+  claude_daily:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      # Optional: Mini-Debug (kannst du später entfernen)
+      - name: Debug OIDC env
+        run: |
+          echo "ACTIONS_ID_TOKEN_REQUEST_URL is set? -> ${ACTIONS_ID_TOKEN_REQUEST_URL:+yes}"
+          echo "ACTIONS_ID_TOKEN_REQUEST_TOKEN is set? -> ${ACTIONS_ID_TOKEN_REQUEST_TOKEN:+yes}"
 
-      - name: Install feedparser
-        run: pip install feedparser
-
-      - name: Fetch RSS feeds
-        run: python scripts/fetch_feeds.py
-
-      - name: Claude generates content
+      - name: Run Claude Code Action
         uses: anthropics/claude-code-action@v1
         with:
           prompt: |
-            Read news_links.json.
+            Follow CLAUDE.md strictly.
 
-            Create today's news summary in:
-            docs/news/YYYY-MM/daily-YYYY-MM-DD.md
+            Use today's date in Europe/Berlin format YYYY-MM-DD.
+            Create/update:
+            - docs/news/YYYY-MM/daily-YYYY-MM-DD.md (10–20 items, each with 1–3 sources + tags)
+            - docs/ideas/YYYY-MM/daily-YYYY-MM-DD.md (20–40 ideas derived from news)
 
-            Create content ideas in:
-            docs/ideas/YYYY-MM/daily-YYYY-MM-DD.md
+            Update docs/index.md with links to newest daily files.
 
-            Follow CLAUDE.md instructions.
-
-            Commit the changes in a new branch:
-            content/daily-YYYY-MM-DD
-
-            Open a pull request titled:
-            "AI Content Update YYYY-MM-DD"
+            Create a branch content/daily-YYYY-MM-DD, commit, and open a PR:
+            Title: "AI Content Update: YYYY-MM-DD"
