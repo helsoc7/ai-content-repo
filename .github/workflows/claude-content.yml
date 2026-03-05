@@ -1,0 +1,25 @@
+name: Claude - Generate content
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "What should Claude generate?"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Claude Code Action
+        uses: anthropics/claude-code-action@v1
+        with:
+          prompt: ${{ inputs.prompt }}
