@@ -1,0 +1,48 @@
+name: Claude Daily News
+
+on:
+  schedule:
+    - cron: "10 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  daily_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install feedparser
+        run: pip install feedparser
+
+      - name: Fetch RSS feeds
+        run: python scripts/fetch_feeds.py
+
+      - name: Claude generates content
+        uses: anthropics/claude-code-action@v1
+        with:
+          prompt: |
+            Read news_links.json.
+
+            Create today's news summary in:
+            docs/news/YYYY-MM/daily-YYYY-MM-DD.md
+
+            Create content ideas in:
+            docs/ideas/YYYY-MM/daily-YYYY-MM-DD.md
+
+            Follow CLAUDE.md instructions.
+
+            Commit the changes in a new branch:
+            content/daily-YYYY-MM-DD
+
+            Open a pull request titled:
+            "AI Content Update YYYY-MM-DD"
