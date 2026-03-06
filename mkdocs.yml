@@ -1,6 +1,6 @@
 site_name: AI Content Hub
 site_description: AI News and Content Ideas
-site_url: https://USERNAME.github.io/ai-content-hub
+site_url: https://helsoc7.github.io/ai-content-repo
 
 theme:
   name: material
@@ -8,9 +8,9 @@ theme:
 nav:
   - Home: index.md
   - News:
-      - news/
+      - Neueste News: news/latest.md
   - Content Ideas:
-      - ideas/
+      - Ideen: ideas/index.md
 
 markdown_extensions:
   - toc
