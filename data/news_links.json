@@ -1,0 +1,182 @@
+[
+  {
+    "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+    "link": "https://arxiv.org/abs/2603.04448",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Capability Thresholds and Manufacturing Topology: How Embodied Intelligence Triggers Phase Transitions in Economic Geography",
+    "link": "https://arxiv.org/abs/2603.04457",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Progressive Refinement Regulation for Accelerating Diffusion Language Model Decoding",
+    "link": "https://arxiv.org/abs/2603.04514",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Discovering mathematical concepts through a multi-agent system",
+    "link": "https://arxiv.org/abs/2603.04528",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Adaptive Memory Admission Control for LLM Agents",
+    "link": "https://arxiv.org/abs/2603.04549",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Self-Attribution Bias: When AI Monitors Go Easy on Themselves",
+    "link": "https://arxiv.org/abs/2603.04582",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "ECG-MoE: Mixture-of-Expert Electrocardiogram Foundation Model",
+    "link": "https://arxiv.org/abs/2603.04589",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Towards automated data analysis: A guided framework for LLM-based risk estimation",
+    "link": "https://arxiv.org/abs/2603.04631",
+    "source": "cs.AI updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Decorrelating the Future: Joint Frequency Domain Learning for Spatio-temporal Forecasting",
+    "link": "https://arxiv.org/abs/2603.04418",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Machine Learning for Complex Systems Dynamics: Detecting Bifurcations in Dynamical Systems with Deep Neural Networks",
+    "link": "https://arxiv.org/abs/2603.04420",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "FedEMA-Distill: Exponential Moving Average Guided Knowledge Distillation for Robust Federated Learning",
+    "link": "https://arxiv.org/abs/2603.04422",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Delta-Crosscoder: Robust Crosscoder Model Diffing in Narrow Fine-Tuning Regimes",
+    "link": "https://arxiv.org/abs/2603.04426",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Thin Keys, Full Values: Reducing KV Cache via Low-Dimensional Attention Selection",
+    "link": "https://arxiv.org/abs/2603.04427",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Agent Memory Below the Prompt: Persistent Q4 KV Cache for Multi-Agent LLM Inference on Edge Devices",
+    "link": "https://arxiv.org/abs/2603.04428",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Flowers: A Warp Drive for Neural PDE Solvers",
+    "link": "https://arxiv.org/abs/2603.04430",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "Uncertainty-Calibrated Spatiotemporal Field Diffusion with Sparse Supervision",
+    "link": "https://arxiv.org/abs/2603.04431",
+    "source": "cs.LG updates on arXiv.org",
+    "published_at": "2026-03-06T05:00:00+00:00"
+  },
+  {
+    "title": "The Pentagon formally labels Anthropic a supply-chain risk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/890347/pentagon-anthropic-supply-chain-risk",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T23:02:22+00:00"
+  },
+  {
+    "title": "Netflix is buying Ben Affleck’s AI startup",
+    "link": "https://www.theverge.com/streaming/889973/netflix-ben-affleck-interpositive-ai",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T18:27:16+00:00"
+  },
+  {
+    "title": "OpenAI’s new GPT-5.4 model is a big step toward autonomous agents",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/889926/openai-gpt-5-4-model-release-ai-agents",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T18:00:00+00:00"
+  },
+  {
+    "title": "Meta’s AI glasses reportedly send sensitive footage to human reviewers in Kenya",
+    "link": "https://www.theverge.com/tech/889637/meta-ai-smart-glasses-human-reviewers-kenya",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T16:37:52+00:00"
+  },
+  {
+    "title": "Apple Music adds optional labels for AI songs and visuals",
+    "link": "https://www.theverge.com/tech/889836/apple-music-ai-transparency-tags-launch",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T14:00:00+00:00"
+  },
+  {
+    "title": "AI tools can unmask anonymous accounts",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T13:30:00+00:00"
+  },
+  {
+    "title": "Anthropic makes last-ditch effort to salvage deal with Pentagon after blowup",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/889782/anthropic-pentagon-discussions-ai-deal",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T11:46:46+00:00"
+  },
+  {
+    "title": "Seven tech giants signed Trump’s pledge to keep electricity costs from spiking around data centers",
+    "link": "https://www.theverge.com/news/889578/data-center-power-pledge-white-house-google-meta-microsoft",
+    "source": "AI | The Verge",
+    "published_at": "2026-03-05T00:17:37+00:00"
+  },
+  {
+    "title": "‘Uncanny Valley’: Iran War in the AI Era, Prediction Market Ethics, and Paramount Beats Netflix",
+    "link": "https://www.wired.com/story/uncanny-valley-podcast-iran-war-artificial-intelligence-prediction-markets-paramount-warner-bros/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-05T22:17:54+00:00"
+  },
+  {
+    "title": "OpenAI Had Banned Military Use. The Pentagon Tested Its Models Through Microsoft Anyway",
+    "link": "https://www.wired.com/story/openai-defense-department-ban-military-use-microsoft/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-05T22:00:00+00:00"
+  },
+  {
+    "title": "ByteDance’s AI Ambitions Are Being Hampered by Compute Restraints and Copyright Concerns",
+    "link": "https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-05T21:14:22+00:00"
+  },
+  {
+    "title": "Grammarly Is Offering ‘Expert’ AI Reviews From Your Favorite Authors—Dead or Alive",
+    "link": "https://www.wired.com/story/grammarly-is-offering-expert-ai-reviews-from-your-favorite-authors-dead-or-alive/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-04T22:56:37+00:00"
+  },
+  {
+    "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
+    "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-04T22:13:27+00:00"
+  },
+  {
+    "title": "What AI Models for War Actually Look Like",
+    "link": "https://www.wired.com/story/ai-model-military-use-smack-technologies/",
+    "source": "Feed: Artificial Intelligence Latest",
+    "published_at": "2026-03-04T22:00:03+00:00"
+  }
+]
