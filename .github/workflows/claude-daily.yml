@@ -33,43 +33,118 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Follow CLAUDE.md strictly.
-
-            Read the input file data/news_links.json.
-
-            IMPORTANT:
-            - Only use the articles found in data/news_links.json.
-            - Do NOT run git commands.
-            - Do NOT create branches or pull requests.
-            - Only create or update markdown files inside docs/.
-
-            Use today's date in Europe/Berlin format YYYY-MM-DD.
-
-            Create or update:
-            1. docs/news/YYYY-MM/daily-YYYY-MM-DD.md
-            2. docs/news/latest.md
-
-            Requirements for docs/news/YYYY-MM/daily-YYYY-MM-DD.md:
-            - Title: "Daily AI Brief — YYYY-MM-DD"
-            - Start with a short intro section:
-              "Was heute wichtig ist"
-            - Then create one section per found article
-            - For each article include:
-              - headline
-              - source name
-              - source link
-              - short 2-3 sentence summary in German
-              - short "Warum relevant?" sentence
-              - tags
-
-            Requirements for docs/news/latest.md:
-            - same content as the daily file
-            - title: "Latest AI Brief"
-            - include "Last updated: YYYY-MM-DD"
-
-            Update docs/index.md:
-            - add a link near the top to docs/news/latest.md
-            - optionally also link to today's daily file
+            prompt: |
+                Follow CLAUDE.md strictly.
+              
+                You are generating content for a MkDocs documentation site.
+              
+                Input file:
+                data/news_links.json
+              
+                This JSON file has the structure:
+              
+                {
+                  "generated_at": "...",
+                  "feeds_count": ...,
+                  "items_count": ...,
+                  "items": [
+                    {
+                      "title": "...",
+                      "link": "...",
+                      "source": "...",
+                      "published_at": "...",
+                      "summary": "..."
+                    }
+                  ]
+                }
+              
+                IMPORTANT RULES:
+                - Only use the entries in the "items" array.
+                - Do NOT invent news.
+                - Do NOT run git commands.
+                - Only create or update Markdown files inside docs/.
+                - Write in German.
+              
+                Use today's date in Europe/Berlin format YYYY-MM-DD.
+              
+                Create the following files:
+              
+                ------------------------------------------------
+              
+                docs/news/YYYY-MM/daily-YYYY-MM-DD.md
+              
+                Requirements:
+              
+                Title:
+                # Daily AI Brief — YYYY-MM-DD
+              
+                Structure:
+              
+                1) Intro section
+              
+                ## Was heute wichtig ist
+              
+                Write a short 3–5 sentence overview of the main themes across the news.
+              
+                2) News section
+              
+                ## News
+              
+                For each article in the JSON items list create a subsection:
+              
+                ### <title>
+              
+                **Quelle:** <source>  
+                **Link:** <link>
+              
+                Short summary (2–3 sentences) using the provided summary field as context.
+              
+                Then add:
+              
+                **Warum relevant?**  
+                One sentence explaining why this matters for developers, AI users or industry.
+              
+                Add tags if obvious:
+              
+                Tags examples:
+                - llm
+                - agentic
+                - multi-agent
+                - research
+                - policy
+                - open-source
+              
+                ------------------------------------------------
+              
+                Also create or update:
+              
+                docs/news/latest.md
+              
+                Requirements:
+              
+                Title:
+                # Latest AI Brief
+              
+                Include:
+              
+                Last updated: YYYY-MM-DD
+              
+                Then copy the same content as today's daily brief.
+              
+                ------------------------------------------------
+              
+                Finally update:
+              
+                docs/index.md
+              
+                At the top of the page add:
+              
+                ## Latest AI News
+              
+                - [Latest AI Brief](news/latest.md)
+                - [Daily Brief YYYY-MM-DD](news/YYYY-MM/daily-YYYY-MM-DD.md)
+              
+                Do not modify any other sections of the file.
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
