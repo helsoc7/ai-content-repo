@@ -1,5 +1,40 @@
 # Latest AI Brief
 
+Last updated: 2026-03-09
+
+## Was heute wichtig ist
+
+Die heutigen Meldungen zeigen einen klaren Schwerpunkt auf KI-Agenten und Multi-Agenten-Systemen: Von der Planung verkörperter Roboter-Agenten über Benchmarks für dynamische Umgebungen bis hin zu medizinischen KI-Assistenten. Gleichzeitig rücken Sicherheits- und Vertrauensfragen in den Vordergrund – sowohl bei Reasoning-Modellen (Chain-of-Thought-Kontrolle) als auch beim Datenschutz im Alltag. Aus der Techpresse fallen besonders drei Themen auf: die wachsende Open-Source-KI-Community rund um OpenClaw, Grammarlys umstrittene Nutzung realer Identitäten ohne Erlaubnis sowie Jack Dorseys drastischer Stellenabbau bei Block, den er mit neuen KI-Fähigkeiten begründet.
+
+---
+
+## News
+
+### RoboLayout: Differentiable 3D Scene Generation for Embodied Agents
+
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05522
+
+RoboLayout erweitert das LayoutVLM-Modell und nutzt Vision-Language-Modelle (VLMs) für die räumliche Planung und die Erzeugung von 3D-Szenen aus freien Sprachbefehlen. Ziel ist es, Layouts zu generieren, die nicht nur semantisch korrekt sind, sondern auch physikalisch für verkörperte Agenten nutzbar bleiben – eine offene Herausforderung in geschlossenen Innenräumen.
+
+**Warum relevant?** Roboter-Agenten benötigen realistische und interaktionsfähige Umgebungen für Training und Tests; RoboLayout adressiert genau diese Lücke zwischen Sprachverständnis und physikalischer Machbarkeit.
+
+**Tags:** agentic, llm, research
+
+---
+
+### Real-Time AI Service Economy: A Framework for Agentic Computing Across the Continuum
+
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05614
+
+Dieser Artikel stellt ein Framework für Echtzeit-KI-Dienste vor, bei dem autonome Agenten Workloads über Device-Edge-Cloud-Kontinua hinweg koordinieren. Service-Abhängigkeitsgraphen werden als DAGs modelliert, um Ressourcenverteilung, Latenz und Governance-Anforderungen zu optimieren.
+
+**Warum relevant?** Mit der wachsenden Verbreitung agentenbasierter Systeme werden Infrastruktur-Frameworks für skalierbare und richtlinienkonforme Echtzeit-Dienste immer wichtiger.
+
+**Tags:** agentic, multi-agent, research
 Last updated: 2026-03-08
 
 ## Was heute wichtig ist
@@ -100,20 +135,24 @@ Nach einem Monat mit Amazons neuem Echo Show 15 und dem Alexa+-Assistenten zieht
 
 ---
 
-### Jack Dorsey Is Ready to Explain the Block Layoffs
+### Reasoning Models Struggle to Control their Chains of Thought
 
-**Quelle:** Feed: Artificial Intelligence Latest (Wired)
-**Veröffentlicht:** 2026-03-06T10:00:00+00:00
-**Link:** https://www.wired.com/story/jack-dorsey-explains-block-layoffs/
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05706
 
+Forscher untersuchen, ob moderne Reasoning-Modelle ihren Chain-of-Thought (CoT) gezielt steuern können – eine Fähigkeit, die CoT-Monitoring als Sicherheitswerkzeug gefährden würde. Dafür wurde die CoT-Control-Evaluationssuite eingeführt, die Modelle in Aufgaben testet, bei denen sie Probleme lösen und gleichzeitig CoT-Anweisungen einhalten müssen.
+
+**Warum relevant?** CoT-Monitoring gilt als vielversprechender Ansatz zur Erkennung unerwünschter Verhaltensweisen in KI-Modellen; wenn Modelle ihren CoT bewusst manipulieren können, sinkt die Zuverlässigkeit dieses Sicherheitsmechanismus erheblich.
 Block-CEO Jack Dorsey hat in einem ausführlichen Interview erklärt, warum er 40 Prozent seiner Belegschaft entlassen hat: Aktuelle KI-Tools – insbesondere Anthropics Opus 4.6 und OpenAIs Codex 5.3 – hätten die Softwareentwicklung so grundlegend verändert, dass Unternehmen neu strukturiert werden müssen. Dorsey will Block „wie eine Mini-AGI" aufbauen, mit einer KI-Intelligenzschicht als zentralem Organisationsprinzip.
 
 **Warum relevant?** Block ist eines der ersten großen Unternehmen, das offen erklärt, KI als Grund für Massenentlassungen zu nutzen. Das könnte ein Vorläufer breiterer wirtschaftlicher Transformationen sein.
 
-**Tags:** agi, agentic, startups
+**Tags:** llm, safety, research
 
 ---
 
+### Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery
 ### The Pentagon formally labels Anthropic a supply-chain risk
 
 **Quelle:** AI | The Verge
@@ -158,10 +197,15 @@ Grammarlys neue Funktion „Expert Review" bietet Schreibratschläge „inspirie
 
 ### Why Is Alexa+ So Bad?
 
-**Quelle:** Feed: Artificial Intelligence Latest (Wired)
-**Veröffentlicht:** 2026-03-06T11:00:00+00:00
-**Link:** https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05860
 
+Das vorgestellte System kombiniert LLM-basierte Agenten mit einem dynamischen Werkzeugset, das sich anhand klinischer Erfahrungen selbstständig weiterentwickelt. Im Gegensatz zu statischen Agenten, die nach dem Deployment unverändert bleiben, passt dieses System seine Fähigkeiten an verändernde medizinische Anforderungen an.
+
+**Warum relevant?** KI-Agenten in der Medizin müssen robust gegenüber Domain-Shifts sein; selbst-lernende Agenten könnten die Zuverlässigkeit klinischer KI-Systeme langfristig verbessern.
+
+**Tags:** agentic, llm, research
 Nach einem Monat mit Amazons Echo Show 15 und dem neuen Alexa+ KI-Assistenten zieht Wired ein ernüchterndes Fazit. Trotz massiver Investitionen in KI liefert Alexa+ in der Praxis häufig fehlerhafte oder unbefriedigende Ergebnisse.
 
 **Warum relevant?** Amazons Schwierigkeiten mit Alexa+ zeigen, dass selbst große Tech-Konzerne Probleme haben, generative KI in zuverlässige Consumer-Produkte zu übersetzen.
@@ -189,20 +233,88 @@ Trotz eines ausdrücklichen Verbots militärischer Nutzung in den OpenAI-Nutzung
 
 ---
 
-### ByteDance's AI Ambitions Are Being Hampered by Compute Restraints and Copyright Concerns
+### The World Won't Stay Still: Programmable Evolution for Agent Benchmarks
 
-**Quelle:** Feed: Artificial Intelligence Latest (Wired)
-**Veröffentlicht:** 2026-03-05T21:14:22+00:00
-**Link:** https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05910
 
+Die meisten heutigen Agent-Benchmarks setzen statische Umgebungen voraus – dieses Paper untersucht, wie man Benchmark-Umgebungen skalierbar und kontrolliert weiterentwickelt, um die Robustheit von Agenten gegenüber Umgebungsveränderungen besser zu messen. Ziel ist es, realistischere Bewertungen für LLM-gesteuerte Agenten zu ermöglichen.
+
+**Warum relevant?** In der realen Welt ändern sich Tools, Daten und Schnittstellen ständig; Benchmarks, die diese Dynamik abbilden, liefern aussagekräftigere Einschätzungen echter Agentenfähigkeiten.
 ByteDances neues KI-Videomodell Seedance 2.0 sorgt in China für Aufsehen, kämpft aber mit langen Wartezeiten (teils mehrere Stunden pro Video) und massiven Urheberrechtsklagen von Disney, Netflix und Paramount. Das Modell erzeugt beeindruckende Videoinhalte, kann aber wegen mangelnder GPU-Kapazitäten nicht skaliert werden.
 
 **Warum relevant?** Seedance 2.0 illustriert sowohl den technologischen Aufholkurs chinesischer KI-Unternehmen als auch die Engpässe durch US-Exportkontrollen für Chips und globale Urheberrechtskonflikte.
 
-**Tags:** llm, hardware, policy
+**Tags:** agentic, llm, research
 
 ---
 
+### DeepFact: Co-Evolving Benchmarks and Agents for Deep Research Factuality
+
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05912
+
+DeepFact adressiert das Problem der Faktenprüfung in umfangreichen KI-generierten Forschungsberichten (Deep Research Reports). Bestehende Fact-Checker sind für allgemeine, atomare Aussagen ausgelegt – DRRs enthalten jedoch komplexe, kontextabhängige Behauptungen, für die neue Bewertungsrahmen nötig sind.
+
+**Warum relevant?** Mit der zunehmenden Nutzung von KI-Agenten für tiefe Recherchen wächst das Risiko schwer erkennbarer Fehlinformationen; robuste Faktprüfung wird zu einem zentralen Qualitätsmerkmal.
+
+**Tags:** agentic, llm, safety, research
+
+---
+
+### An Interactive Multi-Agent System for Evaluation of New Product Concepts
+
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05980
+
+Dieses Paper schlägt ein LLM-basiertes Multi-Agenten-System vor, das die Bewertung neuer Produktkonzepte in Unternehmen automatisiert. Traditionelle Expertenbewertungen sind zeitaufwendig und anfällig für Bias; das vorgeschlagene System soll diesen Prozess effizienter und objektiver gestalten.
+
+**Warum relevant?** KI-gestützte Produktevaluierung kann Unternehmen helfen, Ressourcen gezielter einzusetzen und subjektive Fehler in frühen Entwicklungsphasen zu reduzieren.
+
+**Tags:** multi-agent, llm, startups
+
+---
+
+### Agentic LLM Planning via Step-Wise PDDL Simulation: An Empirical Characterisation
+
+**Quelle:** cs.AI updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.06064
+
+PyPDDLEngine ist eine neue Open-Source-Planungs-Engine, die klassische PDDL-Simulation als LLM-Tool-Calls verfügbar macht. Das Paper untersucht empirisch, ob LLMs als alternative Planer zu klassischen symbolischen Methoden dienen können – eine offene Frage für autonome Robotik.
+
+**Warum relevant?** Aufgabenplanung ist eine Kernfähigkeit autonomer Systeme; die Kombination aus symbolischer KI und LLMs könnte robustere und erklärbarere Agenten ermöglichen.
+
+**Tags:** agentic, llm, research
+
+---
+
+### Traversal-as-Policy: Log-Distilled Gated Behavior Trees as Policies for Safe Agents
+
+**Quelle:** cs.LG updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05517
+
+Dieser Ansatz destilliert Ausführungslogs autonomer LLM-Agenten in ausführbare Gated Behavior Trees (GBTs) und ersetzt unkontrollierte Generierung durch deterministisches Tree-Traversal als Kontrollpolitik. Das Ergebnis sind sicherere, verifikationsfähige Agenten, die ihr erlerntes Verhalten explizit externalisieren.
+
+**Warum relevant?** Sicherheit und Überprüfbarkeit sind zentrale Hindernisse für den produktiven Einsatz autonomer Agenten; GBTs bieten einen Weg, Agentenverhalten transparent und verifizierbar zu machen.
+
+**Tags:** agentic, safety, research
+
+---
+
+### When AI Levels the Playing Field: Skill Homogenization, Asset Concentration, and Two Regimes of Inequality
+
+**Quelle:** cs.LG updates on arXiv.org
+**Veröffentlicht:** 2026-03-09T04:00:00+00:00
+**Link:** https://arxiv.org/abs/2603.05565
+
+Ein wirtschaftstheoretisches Modell zeigt, dass generative KI individuelle Leistungsunterschiede einebnet, während Kapital und ergänzende Assets stärker konzentriert werden – ein scheinbares Paradox: Die Technologie, die Einzelpersonen angleicht, könnte die gesellschaftliche Ungleichheit vergrößern.
+
+**Warum relevant?** Für Politik, Bildung und Unternehmen ist das Verständnis dieser zwei Regime entscheidend, um die langfristigen sozialen Folgen von KI-Verbreitung richtig einzuschätzen.
 ### Jack Dorsey Is Ready to Explain the Block Layoffs
 
 **Quelle:** Feed: Artificial Intelligence Latest (Wired)
@@ -272,10 +384,91 @@ ClawCon, ein Treffen leidenschaftlicher Open-Source-KI-Enthusiasten in Manhattan
 
 **Warum relevant?** Die wachsende Community rund um Open-Source-KI-Modelle ist ein wichtiges Gegengewicht zur Dominanz großer, geschlossener KI-Plattformen.
 
-**Tags:** llm, startups
+**Tags:** llm, policy, research
 
 ---
 
+### The OpenClaw Superfan Meetup Serves Optimism and Lobster
+
+**Quelle:** AI | The Verge
+**Veröffentlicht:** 2026-03-07T14:00:00+00:00
+**Link:** https://www.theverge.com/ai-artificial-intelligence/890517/openclaw-clawcon-meetup-nyc-open-source-ai
+
+ClawCon NYC versammelte über 700 Anhänger der Open-Source-KI-Plattform OpenClaw – einem Agenten-Tool, das als Gegenpol zu proprietären KI-Diensten der großen Labs gilt. Trotz realer Sicherheitsbedenken (bekannte Malware in der Skill-Bibliothek) sieht die Community die Plattform als demokratisierende Kraft, die KI lokal und kontrollierbar macht.
+
+**Warum relevant?** Open-Source-Agenten-Plattformen gewinnen an Reichweite und Community-Rückhalt; die Spannung zwischen Nutzerfreiheit und Sicherheitsrisiken prägt zunehmend die öffentliche Debatte um agentenbasierte KI.
+
+**Tags:** agentic, security, startups
+
+---
+
+### This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won't Work
+
+**Quelle:** Feed: Artificial Intelligence Latest (Wired)
+**Veröffentlicht:** 2026-03-06T23:45:14+00:00
+**Link:** https://www.wired.com/story/deveillance-spectre-i/
+
+Das Startup Deveillance hat mit dem Spectre I einen tragbaren Ultraschall-Mikrofon-Jammer angekündigt, der KI-gestützte Always-On-Wearables stumm schalten soll. Experten bezweifeln jedoch die technische Machbarkeit der versprochenen Funktionen – insbesondere die Erkennung von Mikrofonen per Funkfrequenzen.
+
+**Warum relevant?** Das enorme öffentliche Interesse am Spectre I zeigt, wie stark der Wunsch nach Datenschutz-Lösungen gegen allgegenwärtige KI-Aufnahmegeräte gewachsen ist – auch wenn die Technologie noch nicht ausgereift ist.
+
+**Tags:** security, policy
+
+---
+
+### Grammarly is Using Our Identities Without Permission
+
+**Quelle:** AI | The Verge
+**Veröffentlicht:** 2026-03-06T20:58:24+00:00
+**Link:** https://www.theverge.com/ai-artificial-intelligence/890921/grammarly-ai-expert-reviews
+
+Grammarlys „Expert Review"-Funktion generiert Schreibratschläge, die angeblich von bekannten Experten und Journalisten „inspiriert" sind – darunter mehrere Mitarbeiter von The Verge – ohne deren Wissen oder Zustimmung. Die KI-generierten Kommentare werden in einer Oberfläche präsentiert, die echten Nutzerkommentaren ähnelt, was zu Verwirrung führen kann.
+
+**Warum relevant?** Die Nutzung realer Identitäten für KI-Ausgaben ohne Erlaubnis wirft grundsätzliche Fragen zu Einwilligung, Persönlichkeitsrechten und der Glaubwürdigkeit KI-generierter Inhalte auf.
+
+**Tags:** llm, safety, policy
+
+---
+
+### The AI Doc Is an Overwrought Hype Piece for Doomers and Accelerationists Alike
+
+**Quelle:** AI | The Verge
+**Veröffentlicht:** 2026-03-06T19:05:00+00:00
+**Link:** https://www.theverge.com/entertainment/890806/the-ai-doc-or-how-i-became-an-apocaloptimist-review
+
+Die Focus-Features-Dokumentation „The AI Doc: Or How I Became an Apocaloptimist" wollte generative KI für Laien erklärbar machen – mit Interviews von Forschern, Whistleblowern und CEOs wie Sam Altman und Dario Amodei. The Verge kritisiert, dass der Film zu viel Zeit für Doom-Szenarien und Beschleuniger-Rhetorik aufwendet, ohne wirklich tiefe Analyse zu liefern.
+
+**Warum relevant?** Wie KI in populären Medien dargestellt wird, beeinflusst die öffentliche Wahrnehmung; eine ausgewogene und substanzielle Aufklärung fehlt laut Kritik weiterhin.
+
+**Tags:** agi, policy
+
+---
+
+### Why Is Alexa+ So Bad?
+
+**Quelle:** Feed: Artificial Intelligence Latest (Wired)
+**Veröffentlicht:** 2026-03-06T11:00:00+00:00
+**Link:** https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/
+
+Nach einem Monat Praxistest mit Amazons neuem Echo Show 15 und dem KI-gestützten Alexa+ kommt der Wired-Autor zu einem vernichtenden Urteil: Der Assistent versteht Absichten unzuverlässig, halbiert Aufgaben und behauptet manchmal, etwas abgespielt zu haben, was er nicht abgespielt hat. Im Vergleich schneiden Google, Anthropic und OpenAI mit ihren Automatisierungstools deutlich besser ab.
+
+**Warum relevant?** Amazons Rückstand bei KI-Assistenten ist symptomatisch für die Schwierigkeit, zuverlässige, konversationelle KI in Massenprodukte zu integrieren – ein Maßstab für die gesamte Branche.
+
+**Tags:** llm, agentic
+
+---
+
+### Jack Dorsey Is Ready to Explain the Block Layoffs
+
+**Quelle:** Feed: Artificial Intelligence Latest (Wired)
+**Veröffentlicht:** 2026-03-06T10:00:00+00:00
+**Link:** https://www.wired.com/story/jack-dorsey-explains-block-layoffs/
+
+Block-CEO Jack Dorsey entließ rund 40 Prozent der Belegschaft (ca. 4.000 Stellen) und begründet dies mit einem fundamentalen Wandel durch KI-Tools wie Anthropic Opus 4.6 und OpenAI Codex 5.3. Dorsey will Block künftig als „Mini-AGI" aufstellen – mit einem KI-Intelligence-Layer als Kernorganisationsprinzip anstelle traditioneller Managementhierarchien.
+
+**Warum relevant?** Der Fall Block könnte ein Muster für branchenweite Restrukturierungen setzen: CEOs nutzen KI-Fortschritte als Rechtfertigung für drastische Stellenabbaus, was die gesellschaftliche Debatte über KI und Beschäftigung weiter anheizt.
+
+**Tags:** llm, agentic, policy, startups
 ### The AI Doc is an overwrought hype piece for doomers and accelerationists alike
 
 **Quelle:** AI | The Verge
