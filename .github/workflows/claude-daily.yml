@@ -108,11 +108,12 @@ jobs:
                 - [Daily Brief YYYY-MM-DD](news/YYYY-MM/daily-YYYY-MM-DD.md)
               - keep the rest of the page intact
       - name: Create Pull Request
+        id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: |
             docs/**
-          branch: content/daily-${{ github.run_id }}
+          branch: content/daily-update
           title: "AI Content Update (Daily)"
           commit-message: "Daily news update"
           body: |
@@ -122,3 +123,9 @@ jobs:
             - generated daily AI brief
             - updated latest news page
             - updated docs index
+
+      - name: Merge Pull Request
+        if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
+        run: gh pr merge --squash --delete-branch "${{ steps.create-pr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
