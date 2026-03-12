@@ -124,6 +124,24 @@ jobs:
             - updated latest news page
             - updated docs index
 
+      - name: Claude PR Review
+        if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Reviewe den Pull Request #${{ steps.create-pr.outputs.pull-request-number }} im Repository ${{ github.repository }}.
+
+            Lies die geänderten Markdown-Dateien in docs/ und prüfe:
+            1. Sind die Zusammenfassungen auf Deutsch und gut formuliert?
+            2. Stimmt die MkDocs Markdown-Struktur (Überschriften-Hierarchie, Links)?
+            3. Sind alle Pflichtabschnitte vorhanden (## Was heute wichtig ist, ## News, Subsektionen mit Quelle/Link/Tags)?
+            4. Wirkt der Inhalt faktisch basiert (keine erfundenen News)?
+
+            Hinterlasse einen Review-Kommentar auf dem PR auf Deutsch mit deiner Einschätzung.
+            Danach wird der PR automatisch gemerged.
+
       - name: Merge Pull Request
         if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
         run: gh pr merge --squash --delete-branch "${{ steps.create-pr.outputs.pull-request-number }}"
