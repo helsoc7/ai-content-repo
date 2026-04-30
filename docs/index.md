@@ -3,6 +3,7 @@
 ## Latest AI News
 
 - [Latest AI Brief](news/latest.md)
+- [Daily Brief 2026-04-30](news/2026-04/daily-2026-04-30.md)
 - [Daily Brief 2026-04-29](news/2026-04/daily-2026-04-29.md)
 - [Daily Brief 2026-04-28](news/2026-04/daily-2026-04-28.md)
 - [Daily Brief 2026-04-27](news/2026-04/daily-2026-04-27.md)
